@@ -1,0 +1,5 @@
+C:\Users\Blue\AppData\Roaming\MetaQuotes\Terminal\038983A63A5CE68161CBF3B0C5B3FC6A\MQL4\Projects\nquotes\MovingAverageExpert\bin\Debug\DebugHost.exe
+C:\Users\Blue\AppData\Roaming\MetaQuotes\Terminal\038983A63A5CE68161CBF3B0C5B3FC6A\MQL4\Projects\nquotes\MovingAverageExpert\bin\Debug\DebugHost.pdb
+C:\Users\Blue\AppData\Roaming\MetaQuotes\Terminal\038983A63A5CE68161CBF3B0C5B3FC6A\MQL4\Projects\nquotes\MovingAverageExpert\DebugHost\obj\Debug\DebugHost.csprojResolveAssemblyReference.cache
+C:\Users\Blue\AppData\Roaming\MetaQuotes\Terminal\038983A63A5CE68161CBF3B0C5B3FC6A\MQL4\Projects\nquotes\MovingAverageExpert\DebugHost\obj\Debug\DebugHost.exe
+C:\Users\Blue\AppData\Roaming\MetaQuotes\Terminal\038983A63A5CE68161CBF3B0C5B3FC6A\MQL4\Projects\nquotes\MovingAverageExpert\DebugHost\obj\Debug\DebugHost.pdb

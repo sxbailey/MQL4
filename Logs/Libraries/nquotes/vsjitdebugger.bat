@@ -1,0 +1,1 @@
+@start vsjitdebugger.exe %~dp0\nquotes.debughost.exe
