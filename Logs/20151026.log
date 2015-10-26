@@ -1,0 +1,42 @@
+0	06:48:42.694	Compiling 'EA_ADX_MA'
+0	06:48:42.695	Compiling 'EA_MACD'
+0	06:48:42.695	Compiling 'EA_OsMA'
+0	06:48:42.695	Compiling 'Live'
+0	06:48:42.695	Compiling 'MACD Sample'
+0	06:48:42.696	Compiling 'nquotes'
+0	06:48:42.696	Compiling 'Profitable buy low MODE_LWMA'
+0	06:48:42.696	Compiling 'SteveTest2'
+0	06:48:42.697	Compiling 'ADX_Simple'
+0	06:48:46.755	Compiling 'Accelerator'
+0	06:48:46.755	Compiling 'Accumulation'
+0	06:48:46.755	Compiling 'Alligator'
+0	06:48:46.756	Compiling 'ATR'
+0	06:48:46.756	Compiling 'Awesome'
+0	06:48:46.756	Compiling 'Bands'
+0	06:48:46.757	Compiling 'Bears'
+0	06:48:46.757	Compiling 'CCI'
+0	06:48:46.757	Compiling 'Custom Moving Averages'
+0	06:48:46.757	Compiling 'Heiken Ashi'
+0	06:48:46.758	Compiling 'jjn_ind'
+0	06:48:46.759	Compiling 'MACD'
+0	06:48:46.759	Compiling 'OsMA'
+0	06:48:46.759	Compiling 'Parabolic'
+0	06:48:46.759	Compiling 'RSI'
+0	06:48:46.760	Compiling 'Stochastic'
+0	06:48:46.760	Compiling 'vininixlrmatcolor'
+0	06:48:46.761	Compiling 'emas'
+0	06:48:46.761	Compiling 'Volatility2'
+0	06:48:46.761	Compiling 'Volatility4'
+0	06:48:46.762	Compiling 'SimplePanel'
+0	06:48:55.434	Compiling 'PeriodConverter'
+0	06:48:55.435	Compiling 'DLLSampleTester'
+0	06:48:55.436	Compiling 'PipeClient'
+0	06:48:55.436	Compiling 'PipeClientPure'
+0	06:49:00.152	Custom indicator HLC3 BTCUSD,Daily: loaded successfully
+0	06:49:00.156	HLC3 BTCUSD,Daily: initialized
+0	06:49:00.203	Custom indicator HLC3 LTCUSD,Daily: loaded successfully
+0	06:49:00.208	Expert EA_MACD LTCUSD,Daily: loaded successfully
+0	06:49:00.208	EA_MACD LTCUSD,Daily inputs: TakeProfit=29.0; BuyPrice=26.0; StopLoss=40.0; MCAD_Fast=20; MCAD_Slow=9; MCAD_Signal=34; Price_Type=3; Drop_Days_Back=1; Drop_Days_Stop=16; Drop_Amount=100.0; 
+0	06:49:00.212	HLC3 LTCUSD,Daily: initialized
+0	06:49:00.274	Expert EA_MACD PPCUSD,Daily: loaded successfully
+0	06:49:00.274	EA_MACD PPCUSD,Daily inputs: TakeProfit=29.0; BuyPrice=26.0; StopLoss=40.0; MCAD_Fast=20; MCAD_Slow=9; MCAD_Signal=34; Price_Type=3; Drop_Days_Back=1; Drop_Days_Stop=16; Drop_Amount=100.0; 

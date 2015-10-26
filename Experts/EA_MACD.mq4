@@ -18,25 +18,32 @@
 
 // BTC
 // Daily 
-// T:29
-// B:26
-// S:40
-// MCAD 20/09/34
-// Drop 1/16/100
+//4519	1299.22	4	0.00	324.81	377.36	12.58%	0.00000000	
+//TakeProfit=28 	
+//BuyPrice=26 	
+//StopLoss=71 	
+//MCAD_Fast=16 	
+//MCAD_Slow=15 	
+//MCAD_Signal=5 	
+//Drop_Days_Back=80 	
+//Drop_Days_Stop=3 	
+//Drop_Amount=387	
+//Price_Type=3
 
-input double TakeProfit = 29 ; // How much the price should go up before we take the profit an walk away.
+
+input double TakeProfit = 28 ; // How much the price should go up before we take the profit an walk away.
 input double BuyPrice =  26 ;  // What price do we want to buy at
-input double StopLoss = 40;
+input double StopLoss = 71;
 
-input int MCAD_Fast = 20;
-input int MCAD_Slow = 09;
-input int MCAD_Signal = 34;
+input int MCAD_Fast = 16;
+input int MCAD_Slow = 15;
+input int MCAD_Signal = 5;
 
 input int Price_Type = 3;
 
-input int Drop_Days_Back = 1;
-input int Drop_Days_Stop = 16;
-input double Drop_Amount = 100;
+input int Drop_Days_Back = 80;
+input int Drop_Days_Stop = 3;
+input double Drop_Amount = 387;
 
 //input double Low_Multiplier = 1.5;
 //input double High_Multiplier = 10.2;
@@ -68,7 +75,7 @@ int OnInit()
    if (OrderSelect(0, SELECT_BY_POS)==true)
    {
       LastTicket = OrderTicket();
-     Alert("Another Order in play : ", Symbol(), " Ticket : ", LastTicket);
+      Alert("Another Order in play : ", Symbol(), " Ticket : ", LastTicket);
    }
 
    Alert("Currency : ",OrderSymbol());
@@ -112,16 +119,22 @@ void OnTick()
    // Work if the current bar is a new bar   
    if (NewBarTime != Time[0])
    {
-      if (OrderSelect(0, SELECT_BY_POS)==true)
+   
+      //Print("OrdersTotal : ", OrdersTotal());
+      for(int i=0;i<OrdersTotal();i++)
       {
-         LastTicket = OrderTicket();
-         if (Symbol() != OrderSymbol())
+         if (OrderSelect(i, SELECT_BY_POS))
          {
-            Alert("Another Order in play : ",  OrderSymbol(), " Ticket : ", LastTicket);
-            return;
-            
+            if (Symbol() == OrderSymbol())
+            {
+               LastTicket = OrderTicket();
+               Print("For ", Symbol(), " Order :", LastTicket," Found");
+               Print("AccountFreeMargin : ", AccountFreeMargin());
+            }
          }
       }
+   
+
       
       if(Big_Drop() > 0)
       {
@@ -136,7 +149,7 @@ void OnTick()
             double _TakeProfit = NormalizeDouble(Ask +   ((TakeProfit / 100) * Ask),3) ; // How much the price should go up before we take the profit an walk away.
             double _BuyPrice = NormalizeDouble(Ask - ((BuyPrice / 100) * Ask),3) ;  // What price do we want to buy at
             double _StopLoss = NormalizeDouble(_BuyPrice - ((StopLoss / 100) * Ask) ,3);  // How far the price can drop before we take a loss and walk away
-            double _Amount = NormalizeDouble( AccountBalance() /  (_BuyPrice),3) -0.1; // How many are we buying
+            double _Amount = NormalizeDouble( (AccountBalance() / 3) /  _BuyPrice,3); // How many are we buying
             int _Slipage = 3; // How many point the price can slip when placing the order
 
 
